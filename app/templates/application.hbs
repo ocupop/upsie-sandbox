@@ -1,7 +1,10 @@
 {{page-title "EmberQuickstart"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div class="messages">
+  <ReceivedMessage />
+  <SentMessage />
+
+  <NewMessageInput />
+</div>
 
 {{outlet}}
