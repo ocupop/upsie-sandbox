@@ -1,17 +1,11 @@
 {{page-title "EmberQuickstart"}}
 
-<div class="messages">
-  <ReceivedMessage />
-  <SentMessage />
-
-  <NewMessageInput />
-</div>
-<hr/>
-
-<section class="mt-5">
-  <TailwindTest />
-</section>
+<Header />
+<main>
+  {{outlet}}
+</main>
+<Footer />
 
 
 
-{{outlet}}
+
