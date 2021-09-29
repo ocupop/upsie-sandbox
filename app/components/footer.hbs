@@ -1,15 +1,19 @@
 <footer>
+  <Footer::NewsletterSignup />
   <div class="container mx-auto">
-    <Footer::NewsletterSignup />
-    <Menus::FooterNav />
+    <div class="p-3 md:p-5">
+      <Menus::FooterNav />
+    </div>  
   </div>
   
-
-  <div class="container mx-auto">
-    <div class="grid grid-cols-3 gap-3">
-      <Footer::Social />
-      <a href="">My Account</a>
-      <a href="">Sitemap</a>
+  <div class="bg-gray-400">
+    <div class="container p-3 md:p-5 mx-auto">
+      <div class="grid grid-cols-3 gap-3">
+        <Footer::Social />
+        <a href="">My Account</a>
+        <a href="">Sitemap</a>
+      </div>
     </div>
   </div>
+  
 </footer>
