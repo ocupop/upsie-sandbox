@@ -1,0 +1,7 @@
+body {
+  
+}
+
+.container {
+  @apply px-2 md:px-0
+}

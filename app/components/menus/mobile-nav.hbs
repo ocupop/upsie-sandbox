@@ -1,0 +1,25 @@
+<!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-3 text-base">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="/warranties" 
+        class="block px-3 py-2"
+        aria-current="page">Warranties</a>
+      <a href=""
+        class="block px-3 py-2">How it Works</a>
+      <a href="/meet-upsie"
+        class="block px-3 py-2">Meet Upsie</a>
+      <a href="#"
+        class="block px-3 py-2">Contact Us</a>
+      <!-- Profile dropdown -->
+      <div class="relative px-3 py-2">
+        <div>
+          <button type="button"
+            class="flex focus:outline-none"
+            id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+            Account
+          </button>
+        </div>
+      </div>   
+    </div>
+  </div>
