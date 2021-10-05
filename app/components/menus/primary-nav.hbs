@@ -1,69 +1,58 @@
-<nav>
+<nav id="pageHeader" class="py-2">
   <div class="mx-auto container">
     <div class="relative flex items-center justify-between h-16">
-      <div class="flex items-center sm:hidden">
+      <div class="flex items-center lg:hidden">
         <!-- Mobile menu button-->
         <button type="button"
           class="inline-flex items-center justify-center p-2"
           aria-controls="mobile-menu" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <!-- Icon when menu is closed.Heroicon name: outline/menu Menu open: "hidden", Menu closed: "block"-->
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          <svg class="block h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
           <!-- Icon when menu is open. Heroicon name: outline/xMenu open: "block", Menu closed: "hidden" -->
-          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          <svg class="hidden h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
-      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex-shrink-0 flex items-center self-start mr-auto">
-          <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+      <div class="flex-1 flex items-center justify-center lg:items-stretch lg:justify-start font-medium">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="/">
+            <img class="block lg:hidden h-10 w-auto" src="/img/logo.svg"
             alt="Workflow">
-          <img class="hidden lg:block h-8 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">
+            <img class="hidden lg:block h-14 w-auto"
+            src="/img/logo.svg" alt="Workflow">
+          </a>
         </div>
-        <div class="hidden sm:block sm:ml-8">
-          <div class="flex space-x-8 text-base">
-            <a href="/" class=""
-              aria-current="page">Home</a>
-            <a href="/warranties"
-              class="">Warranties</a>
-            <a href="/how-it-works"
-              class="">How it Works</a>
-            <a href="#"
-              class="">Meet Upsie</a>
-            <a href="#"
-              class="">Contact Us</a>  
-            <!-- Profile dropdown -->
-            <div class="relative">
-              <div>
-                <button 
-                  type="button"
-                  class=""
-                  id="user-menu-button" 
-                  aria-expanded="false"
-                  aria-haspopup="true">
-                  Account
-                </button>
-              </div>
-              <div
-                class=" origin-top-right absolute right-0 mt-2 w-48 shadow-lg py-1 bg-white"
-                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                <!-- Active: "bg-gray-100", Not Active: "" -->
-                <a href="#" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                  id="user-menu-item-0">Your Profile</a>
-                <a href="#" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                  id="user-menu-item-1">Settings</a>
-                <a href="#" class="block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
-                  id="user-menu-item-2">Sign out</a>
-              </div>
-            </div> 
+        <div class="hidden lg:flex items-center lg:ml-12">
+          <div class="flex items-center space-x-8 text-base pt-3">
+            <a href="/warranties">Warranties</a>
+            <a href="/how-it-works">How it Works</a>
+            <a href="#">Meet Upsie</a>
           </div>
         </div>
+        <div class="hidden lg:flex items-center ml-auto">
+          <div class="flex items-center space-x-8 text-base pt-3 text-center">
+            <a href="#">My Account</a>
+            <a href="#">Create Account</a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex lg:hidden">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </a>
       </div>
     </div>
   </div>

@@ -1,18 +1,32 @@
-<footer>
-  <Footer::NewsletterSignup />
-  <section>
-    <div class="container mx-auto">
-      <Menus::FooterNav />
-    </div>
-  </section>
-  <div class="bg-gray-400 py-3">
-    <div class="container mx-auto">
-      <div class="grid grid-cols-3 gap-3">
-        <Footer::Social />
-        <a href="">My Account</a>
-        <a href="">Sitemap</a>
+<footer class="lg:bg-dark lg:text-white pt-10 lg:py-20">
+  <div class="container mx-auto">
+    <div class="grid lg:grid-rows-2 lg:grid-flow-col gap-4">
+      <div class="order-2 lg:order-1 row-span-2">
+        <Menus::FooterNav />
+      </div>
+      <div class="order-1 lg:order-2 col-span-2">
+        <Footer::NewsletterSignup />
+      </div>
+      <div class="hidden lg:block order-3 col-span-2 self-end">
+        <div class="flex">
+          <Footer::Social />
+          <div class="flex space-x-8 ml-auto">
+            <a href="#">My Account</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
+  <div class="block lg:hidden bg-dark text-white py-5 mt-5">
+    <div class="container mx-auto">
+      <div class="flex">
+        <Footer::Social />
+        <div class="flex space-x-8 ml-auto">
+          <a href="#">My Account</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

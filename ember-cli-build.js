@@ -7,9 +7,9 @@ module.exports = function (defaults) {
     postcssOptions: {
       compile: {
         plugins: [
-          { module: require('postcss-import') },
-          require('tailwindcss'),
-          // require('tailwindcss')('./app/styles/tailwind.config.js'),
+          // { module: require('postcss-import') },
+          // require('tailwindcss'),
+          require('tailwindcss')('./app/styles/tailwind.config.js'),
         ],
       },
     },
