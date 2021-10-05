@@ -3,9 +3,12 @@
     <div class="relative flex items-center justify-between h-16">
       <div class="flex items-center lg:hidden">
         <!-- Mobile menu button-->
-        <button type="button"
+        <button 
+          type="button"
           class="inline-flex items-center justify-center p-2"
-          aria-controls="mobile-menu" aria-expanded="false">
+          aria-controls="mobile-menu" aria-expanded="false"
+          {{on "click" (fn this.toggleMenu)}}
+          >
           <span class="sr-only">Open main menu</span>
           <!-- Icon when menu is closed.Heroicon name: outline/menu Menu open: "hidden", Menu closed: "block"-->
           <svg class="block h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -56,6 +59,7 @@
       </div>
     </div>
   </div>
-
-  <Menus::MobileNav />
+  {{#if isExpandedMenu}}
+    <Menus::MobileNav />
+  {{/if}}
 </nav>

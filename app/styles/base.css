@@ -1,5 +1,5 @@
 body {
-  background: white;
+  @apply font-normal text-base bg-white
 }
 
 section {

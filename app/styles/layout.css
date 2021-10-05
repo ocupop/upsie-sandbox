@@ -1,0 +1,13 @@
+#pageHeader {
+  z-index: 1000;
+  @apply bg-white
+}
+
+#mobile-menu {
+  z-index: 1000;
+  background-color: white;
+}
+
+#pageContent {
+  min-height: calc(100vh - 350px)
+}

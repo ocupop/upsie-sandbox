@@ -7,7 +7,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      'sans': 'Poppins',
+      sans: 'Poppins',
     },
   },
-}
+};
